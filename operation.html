@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style>
+		html{width: 100%;}
+		body{margin: 0 auto; width: fit-content;}
+	</style>
+</head>
+<body bgcolor="#000000" text="#ffffff" background="pic/back.jpg">
+
+<font size="20" color="#ffff00" ><b>Operation</b></font>
+<br>
+
+<img src="pic/display.jpg" border="0" alt="display.jpg(235801 byte)" width="800" height="600"><br>
+<br>
+<table border="1" bordercolor="#003399">
+	<tr>
+		<td>Target
+</td>
+		<td>The opponent you are locked on. Only one target at a time.</td>
+	</tr>
+	<tr>
+		<td>Durability
+</td>
+		<td>The HP of the unit. If the counter reach 0, the unit will be destroyed.</td>
+	</tr>
+	<tr>
+		<td>Weapon recharge gauge</td>
+		<td>The cooldown of the four weapons. You can use the weapon again if the gauge is full.</td>
+	</tr>
+	<tr>
+		<td>Ex gauge</td>
+		<td>Special ability gauge. It will be accumulated when you cause or recive damage.<br>
+			Method 1: Charge for the main weapon, and the three subweapons.<br>
+			Method 2: Melee attack cancel.<br>
+			Method 3: Evade or Guard escape from hitstun.
+		</td>
+	</tr>
+	<tr>
+		<td>Boost gauge</td>
+		<td>Used when you do a move other than standard walk, or during guard.</td>
+	</tr>
+	<tr>
+		<td>Energy gauge</td>
+		<td>Used when you use energy consuming weapons.</td>
+	</tr>
+	<tr>
+		<td>Remaining lives</td>
+		<td>Revival count for game modes using survival system.</td>
+	</tr>
+	<tr>
+		<td>Pilot image</td>
+		<td>Display the primary image of the selected pilot.</td>
+	</tr>
+	<tr>
+		<td>Lock-on warning</td>
+		<td>Yellow: an opponent lock-on on you ; Red: an opponent attack you</td>
+	</tr>
+	<tr>
+		<td>More lock-on warnings</td>
+		<td>Yellow: an opponent lock-on on you ; Red: an opponent attack you<br>
+			Pink: optical projectile ; White: ballistic projectile ; Blue : special attack
+		</td>
+	</tr>
+	<tr>
+		<td>Kills</td>
+		<td>The number of the destroyed opponents.</td>
+	</tr>
+	<tr>
+		<td>Score</td>
+		<td>Gain points by attacking or defeating the opponents, but will be reduced<br>
+		when you recive damage.</td>
+	</tr>
+	<tr>
+		<td>Radar</td>
+		<td>Displays informations about the other units positions and lock-ons.</td>
+	</tr>
+</table>
+<br>
+<br>
+
+<hr>
+<font size="20" color="#ffff00" ><b>Operation methods</b></font>
+<br>
+
+・Basics operations<br>
+<table border="1" bordercolor="#003399">
+	<tr>
+		<td>Moving</td>
+		<td>↑,↓, ←,→</td>
+	</tr>
+	<tr>
+		<td>Targeting</td>
+		<td>S (↑+S: Long distance lock ; ↓+S: Short distance lock)<br>
+			●Hold S for 0.3 seconds to lock-on the oppenent that target you.<br>
+		    ●Hold S for 0.6 seconds to disable the lock-on.
+		</td>
+	</tr>
+	<tr>
+		<td>Jump</td>
+		<td>Z</td>
+	</tr>
+	<tr>
+		<td>Guard</td>
+		<td>V <font color="#ff0000">Hold down</font> for guard. Guard cancel can be performed.</td>
+	</tr>
+</table>
+<br>
+・Attack operations<br>
+<table border="1" bordercolor="#003399">
+	<tr>
+		<td>Main weapon</td>
+		<td>X (Can be charged up by holding down the button, then releasing it. Consumes Ex.)</td>
+	</tr>
+	<tr>
+		<td>Melee</td>
+		<td>C (Press and hold ↑↓←→ while attacking to perform various combinations.)<br>
+			Depending on the unit, there can be attacks other than melee.</td>
+	</tr>
+	<tr>
+		<td>Subweapon 1</td>
+		<td>A (Can be charged up by holding down the button, then releasing it. Consumes Ex.)</td>
+	</tr>
+	<tr>
+		<td>Subweapon 2</td>
+		<td>D (Can be charged up by holding down the button, then releasing it. Consumes Ex.)</td>
+	</tr>
+	<tr>
+		<td>Subweapon 3</td>
+		<td>F (Can be charged up by holding down the button, then releasing it. Consumes Ex.)</td>
+	</tr>
+</table>
+<br>
+・Special operations
+<table border="1" bordercolor="#003399">
+	<tr>
+		<td>Dash</td>
+		<td>Tap any movement key twice in the same direction. Hold to extend the lenght.</td>
+	</tr>
+	<tr>
+		<td>Boost Dash</td>
+		<td>Press twice and hold Z.<br>
+			Boost Dash long last the unit have boost. Can be change the direction with the ↑,↓, ←,→ keys.</td>
+	</tr>
+	<tr>
+		<td>Transformation</td>
+		<td>Press V during Boost Dash.<br>
+		　　Hold Z or V to continue. Can be change the direction with the ↑,↓, ←,→ keys.<br>
+		　　Z: Rise ; V: Dive ; Z+V: Keep altitude</td>
+	</tr>
+	<tr>
+		<td>Attacking during Boost Dash</td>
+		<td>All unit can use its primary weapon during Boost Dash.<br>
+			Depending on the unit, it can use the subweapons or a variant of the subweapon.</td>
+	</tr>
+	<tr>
+		<td>Attacking during Transformation</td>
+		<td>Depending on the unit, it can use its weapons during other forms.<br>
+			The Transformation can completely alter the weapon's effect.</td>
+	</tr>
+	<tr>
+		<td>Guard Dash</td>
+		<td>X during guard.</td>
+	</tr>
+	<tr>
+		<td>Counter from Guard</td>
+		<td>C during guard. Can be done after you recive a hit during guard.</td>
+	</tr>
+	<tr>
+		<td>Recovery</td>
+		<td>After you have been knocked down, X or C at the moment you hit the ground.</td>
+	</tr>
+	<tr>
+		<td>Landing guard cancel</td>
+		<td>V at the moment you hit the ground. Consumes 1 Ex.</td>
+	</tr>
+	<tr>
+		<td>Emergency guard</td>
+		<td>C+V during hitstun. You will be immediately changed to guard stance. Consumes 3 Ex.</td>
+	</tr>
+	<tr>
+		<td>Emergency evade</td>
+		<td>X+V during hitstun. Guard Dash backwards. Consumes 2 Ex.<br>
+			X+V while knocked down. Guard Dash backwards. Consumes 1 Ex.
+		</td>
+	</tr>
+	<tr>
+		<td>Melee cancel</td>
+		<td>After you hit your opponent, perform a Dash, Boost Dash, or guard to cancel your attack. Consumes 1/4 Ex.</td>
+	</tr>
+	<tr>
+		<td>Primary attack cancel</td>
+		<td>Perform a Boost Dash while using the primary weapon.</td>
+	</tr>
+	<tr>
+		<td>OverClock</td>
+		<td>Rapidly press V three times. Requires at least 4 Ex, consumes all available Ex over time.</td>
+	</tr>
+</table>
+<br>
+・Other operations
+<table border="1" bordercolor="#003399">
+	<tr>
+		<td>HDR ON/OFF</td>
+		<td>F4 (Only when the shader is enabled in the start-up screen.)</td>
+	</tr>
+	<tr>
+		<td>Shadow ON/OFF</td>
+		<td>F5 (Only when the shader and the Shadow enabled in the start-up screen.)</td>
+	</tr>
+	<tr>
+		<td>Change warning display</td>
+		<td>F6 (Only units → Disable all → Enable all in order.)</td>
+	</tr>
+	<tr>
+		<td>Chatlog display ON/OFF</td>
+		<td>F7 (Chat must be on.)</td>
+	</tr>
+	<tr>
+		<td>Display multiplayer match informations</td>
+		<td>Tab<br>
+			Name of the player, used unit, equipped items, remaining lives, FPS, Ping.</td>
+	</tr>
+	<tr>
+		<td>Mark ready in the multiplayer lobby</td>
+		<td>F1<br>
+			Press again to unmark. If everyone marked as ready, the match begins.</td>
+	</tr>
+	<tr>
+		<td>Select</td>
+		<td>Enter</td>
+	</tr>
+	<tr>
+		<td>Bring up menu during fight</td>
+		<td>Esc<br>
+			It is also pausing the game during singleplayer or local battle, but not stop the game during multiplayer.</td>
+	</tr>
+	<tr>
+		<td>Chat during multiplayer</td>
+		<td>Enter (During this time, the unit is uncontrollable.)<br>
+			Write the message, then press Enter again to send, and return to the unit control.<br>
+		</td>
+	</tr>
+	<tr>
+		<td>Team chat during multiplayer</td>
+		<td>Ctrl+Enter</td>
+	</tr>
+	<tr>
+		<td>Team pilot communication</td>
+		<td>Ctrl+0-9</td>
+	</tr>
+	<tr>
+		<td>Screenshot</td>
+		<td>PrintScreen<br>
+		Image is created in the ScreenShot folder. (PNG format will be used.)<br>
+		</td>
+	</tr>
+</table>
+
+<br>
+・Basic combat<br>
+　Guard can be block only frontal attacks, use it wisely.<br>
+　Evade attacks with Dash and Boost Dash.<br>
+　Pay attention to the lock-on warnings. It help you to either guard or evade it.<br>
+　Use the Ex gauge to escape from hits and combos. Charge up your weapons to surprise your opponent. Activate OverClock to gain advantage.
+</body>
+</html>

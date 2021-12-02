@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style>
+		html{width: 100%;}
+		body{margin: 0 auto; width: fit-content;}
+	</style>
+</head>
+<body bgcolor="#000000" text="#ffffff" background="pic/back.jpg">
+
+<font size="20" color="#ffff00" ><b>Online mode</b></font>
+<br><br>
+Either by connecting to an existing server or by starting a<br>
+new one, you are able to play others through the internet.<br>
+<br>
+You can start your own server by using the WindomXP Server.exe<br>
+located within the "Server" folder.<br>
+<br>
+<hr>
+<font color="#00ff00"><b>・Connecting to servers</b></font><br>
+Procedures<br>
+　１．Select the Online Battle Mode to open the connection screen.<br>
+　<br>
+　２．Enter the IP Address of the server you want to connect, or you<br>
+　　　can use the saved addresses from the list. See below how to<br>
+　　　save addresses in the list.<br>
+　　　<br>
+　３．Enter the name<br>
+　　　This name will be displayed during online match. A save data<br>
+　　　will be created with the same name. Anytime you want to play<br>
+　　　online, you can select the name from the list.<br>
+　　　<br>
+　４．Select the pilot and the mech you want to use.<br>
+　　　The mech can be changed in the lobby too, but the pilot isn't.<br>
+　　　<br>
+　５．Click on the LOGIN button.<br>
+　<br>
+　６．At the room selection screen you're may able to choose from<br>
+　　　five room. Select the one you want to enter.<br>
+　　　<br>
+　７．After you entered in a room, you can set yourself to ready by<br>
+　　　pressing the F1 button. The match start when all players are<br>
+　　　set to ready. It is requires some time to prepare.
+　　　<br>
+<br>
+<hr>
+<font color="#00ff00"><b>・Online save data</b></font><br>
+After a name used to login, the save data will be created.<br>
+Any number of save data can be created.<br>
+<br>
+By fighting online, the achived score becomes experience. You can win<br>
+or lose experience, and get ranks depending on you experience points.<br>
+The ranks has no effects on anything, just show the combat potencial.<br>
+<br>
+<font color="#ffff00">Rank list</font><br>
+<table border="1" bordercolor="#003399">
+	<tr>
+		<td>AB</td>
+		<td>Arm2</td>
+		<td>Arm1</td>
+		<td>LCpl</td>
+		<td>Cpl</td>
+		<td>Sgt</td>
+		<td>MSgt</td>
+		<td>2dLt</td>
+		<td>Lt</td>
+		<td>Capt</td>
+		<td>Maj</td>
+		<td>LtCl</td>
+		<td>Col</td>
+		<td>MjGn</td>
+		<td>LtGn</td>
+		<td>Gen</td>
+		<td>Adm</td>
+		<td>Mrsh</td>
+	</tr>
+</table>
+<br>
+・You gain an additional 20000 point bonus if you win, and deduct 10000<br>
+　if you lose the match.<br>
+・If the match will ends in two minutes, you will not gain experience.<br>
+・Quitting from the game before the match ends, you lose 20000 points.<br>
+<br>
+
+<br>
+<hr>
+<font color="#00ff00"><b>Editing the server list</b></font><br>
+　Open the "Server.ini" located inside of the "Game" folder with any text<br>
+　editor. You can add any server to the list using the following example.<br><pre>
+	[ServerList]
+	Cnt=2
+	S0_IP=alexholth.dyndns.org
+	S0_Name=Default Server
+	S1_IP=127.0.0.1
+	S1_Name=Local
+　</pre>
+　Add the address like this.
+　<pre>
+	[ServerList]
+	Cnt=<font color="#00ff00">3</font>
+	S0_IP=alexholth.dyndns.org
+	S0_Name=Default Server
+	S1_IP=127.0.0.1
+	S1_Name=Local
+	<font color="#00ff00">S2_Name=Friend's Server
+	S2_IP=123.210.2.15</font></pre>
+　Cnt stands for the quantity of the listed servers. It start from 0.<br>
+　Since here are already a S0 and a S1, you need to use the S2 tag.<br>
+　S2_Name is the name of the server. You can use any name.<br>
+　S2_IP is the IP address of the computer used to host the server.<br>
+　<br>
+　The next server on the list would be like S3_Name and S3_IP.<br>
+　　
+<br>　
+
+<br>
+<hr>
+<font color="#00ff00"><b>・Attention</b></font><br>
+　Players with weaker PC performance can generate slowdowns. It would<br>
+　affects all the players in the same room.<br>
+　Be sure to adjust the game settings during the start-up to make the<br>
+　game run smoothly on your PC.<br>
+<br>
+
+<br>
+<hr>
+<font color="#00ff00"><b>Setting up server</b></font><br>
+　Before starting the server, open the <font color="#ffff00">TCP ports 2362-2366, and 3362-3366</font>.<br>
+　Do not setup a server for your own. If you want to play with others,<br>
+　connect to their servers, so you don't need to open the ports.<br>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

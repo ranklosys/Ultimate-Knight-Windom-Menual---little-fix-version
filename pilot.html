@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style>
+		html{width: 100%;}
+		body{margin: 0 auto; width: fit-content;}
+	</style>
+</head>
+<body bgcolor="#000000" text="#ffffff" background="pic/back.jpg">
+
+<font size="20" color="#ffff00" ><b>Custom pilots</b></font>
+<br>
+<br>
+Ultimate Knight Windom XP comes with three pilots, but you can edit and<br>
+use your own pilots.<br>
+<br>
+The custom pilots edited by yourself also <font color="#ffff00">can be used in online matches</font>.<font color="#ffff00"><br>
+You don't need to provide the custom data to the other players</font>.<br>
+
+<hr>
+<font color="#ffff00">■How to create</font><br>
+<u>1. Use pilot editor</u><br>
+Ultimate Knight Windom XP PowerUp Kit comes with a PilotEditor software.<br>
+With the use of this software, the pilot editing is relatively easy.<br>
+You can create two different pilot versions.<br>
+<br>
+<hr>
+<u>2. Pilot Version 1</u><br>
+This is the simple version of the pilot, easy to create.<br>
+Use Ace Nuko and Lieutenant Nuko from the base pilots as example.<br>
+There are minimum four step to create a new pilot.<br>
+<br>
+<font color="#00ff00"><b>Procedure</b></font><br>
+　1: Open the "Pilot" folder inside the game's folder.<br>
+　2: Create a new folder here, and name it (feel free to use any name).<br>
+　3: Create a pilot.txt file, and write the pilot's name inside it.<br>
+　　　※Don't use line breaks.<br>
+　4: Provide a picture for the pilot, name it to face.png.<br>
+　　　※The picture must to be in PNG format.<br>
+　　　※It must be 200 x 150 width and height.<br>
+　　　※If its size larger than 100 Kb, the picture will not be visible during online matches.<br>
+<br>
+<font color="#00ff00"><b>Displayable instant messages</b></font><br>
+　5: Create 0-9.txt inside your pilot's folder, and write the messages in those.<br>
+　　　※For example 0.txt, 1.txt, 2.txt., and so on.<br>
+　　　※The messages will be displayed corresponding to the 0-9 keys.<br>
+　　　※It is not require to create all (0-9). Create only those which you need.<br>
+<br>
+<font color="#00ff00"><b>Adding sounds to those messages</b></font><br>
+　6: Provide the sound files you want to play, name it to 0-9.ogg.<br>
+　　　※For example 0.ogg, 1.ogg, 2.ogg., and so on.<br>
+　　　※This will be played alongside with the display of the message when you press the 0-9 key.<br>
+　　　※Only OGG Vorbis sound files can be played.<br>
+　　　※If its size is larger than 50 Kb, the sound will not be audible during online matches.<br>
+<br>
+<font color="#00ff00"><b>Adding voice effects to be played during the match</b></font><br>
+　7: Prepare the sound files and name like below.
+　<pre>
+	atk1-5.ogg : Playing while you attack
+	s_atk1-5.ogg : Playing while you use stronger attacks
+	dmg1-5.ogg : Playing while you receive damages
+	destroy1-5.ogg : Playing while you destroys an opponent
+	die1-5.ogg : Playing while your unit has been destroyed
+	rebirth1-5.ogg : Playing while you respawn
+	wake1-5.ogg : Playing when you must to get up
+　</pre>
+　　　※The 1-5 sounds will be played randomly in the definited situations.<br>
+　　　※If its size is larger than 50 Kb, the sound will not be audible during online matches.<br>
+<br>
+<hr>
+<u>3. Pilot Version 2</u><br>
+This is a more complex pilot than the version 1. You must to provide an<br>
+additional pilot.spt file. With this, the pilot is able to play animations<br>
+with sounds. Use Ace Nuko's Brother from the base pilots as example.<br>
+<br>
+<font color="#00ff00"><b>Procedure</b></font><br>
+　1: The first three step is the same as in the version 1.<br>
+　2: Create an additional pilot.txt, and rename it to pilot.spt.<br>
+　3: Write the animation script in the pilot.spt file and save it.<br>
+　　※The PilotEditor can create pilot.spt files with a more simple way than manually.<br>
+</body>
+</html>
